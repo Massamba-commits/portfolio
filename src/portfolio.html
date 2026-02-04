@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <!--partie nav-->
 <header class="flex justify-between py-4  bg-fixed bg-center md:bg-top bg-blue-500 ">
     <div>
-        <img src="images porfolio/boskampi-programming-1873854_1920.png" class="w-20 ml-20 " alt="">
+        <img src="images porfolio/destkop.jpg" class="w-20 ml-20 " alt="">
     </div>
     <div class="mr-20 mt-3 ">
-    <nav class="text-ms fond-bold flex flex-cols gap-5 ">
+    <nav class="text-ms font-bold font-serif flex flex-cols gap-5 ">
         <ul>Presentation</ul>
         <ul>A propos</ul>
         <ul>Formation</ul>
@@ -22,6 +24,25 @@
     </nav>
     </div>
 </header>
+<!--Acceuil-->
+<section class="relative min-h-screen flex items-center">
+<!-- Image d'arrière-plan -->
+    <div 
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('images porfolio/3d-render-robot-sitting-mouse.jpg');">
+    </div>
+    
+    <!--améliorer la lisibilité -->
+    <div class="absolute inset-0 bg-black/40"></div>
+    
+    <div class="relative z-10 w-full px-10">
+        <div class="text-2xl font-serif py-10 text-white">Developpeur Web Debutant</div>
+        <h1 class="text-center text-6xl md:text-8xl lg:text-10xl font-bold text-white">Bathie Massamba Diouf</h1>
+        <p class="text-xl ml-10 text-white">Étudiant spécialisé en développement web full-stack,</p>
+        <p class="ml-10 text-xl text-white">passionné par la création d'applications innovantes et l'apprentissage continu des technologies modernes.</p>
+    </div>
+</section>
+
 
 <footer></footer>
 </body>
