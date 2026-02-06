@@ -1,57 +1,79 @@
 <!doctype html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - B.Massamba Diouf</title>
   <link href="./output.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <!--partie navigation-->
-<header class="flex justify-between py-1  bg-fixed bg-center md:bg-top bg-blue-50 ">
-    <div>
-        <img src="images porfolio/destkop.jpg" class="w-20 h-20 mx-10 " alt="">
-    </div>
-    <div class="mr-20 mt-7 ">
-    <nav class="text-ms font-bold font-serif flex flex-cols gap-5 ">
-        <a href="presentation"><ul>Presentation</ul></a>
-        <a href="A propos"><ul>A propos</ul></a>
-       <a href="Formmation"> <ul>Formation</ul></a>
-       <a href="Experiences"> <ul>Experiences</ul></a>
-        <a href="Competences"><ul>Competences</ul></a>
-        <a href="projet"><ul>Projet</ul></a>
-        <a href="Conctact"><ul>Contact</ul></a>
-    </nav>
-    </div>
-</header>
-<!--Acceuil-->
-<section class="relative min-h-screen flex items-center">
-<!-- Image d'arrière-plan -->
-    <div 
-        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style="background-image: url('images porfolio/3d-render-robot-sitting-mouse.jpg');">
-    </div>
-    
-    <!--améliorer la lisibilité -->
-    <div class="absolute inset-0 bg-black/40"></div>
-    
-    <div class="relative z-10 w-full px-10">
-        <div class="text-xl font-serif py-6 ml-20 text-blue-50 hover:text-blue-50 dark:hover:text-black ">Developpeur Web Debutant</div>
-        <h1 class="text-center text-6xl md:text-8xl lg:text-10xl font-bold text-white">Bathie Massamba Diouf</h1>
-        <p class="text-xl ml-10 text-white">Étudiant spécialisé en développement web full-stack,</p>
-        <p class="ml-10 text-xl text-white">passionné par la création d'applications innovantes et l'apprentissage continu des technologies modernes.</p>
-    </div>
-</section>
-
-
-
-<footer className="py-12 px-6 border-t border-neutral-200">
-        <div className="max-w-5xl mx-auto text-center text-sm text-neutral-500">
-          <p>© 2026 B.Massamba Diouf/DevOps-Tous droits réservés.</p>
+    <!-- Partie navigation -->
+    <header class="flex justify-between py-1 bg-blue-50">
+        <div>
+            <img src="images porfolio/destkop.jpg" class="w-20 h-20 mx-10" alt="Logo">
         </div>
-      </footer>
-    </div>
-    
+        <div class="mr-20 mt-7">
+            <nav class="text-base font-bold font-serif">
+                <ul class="flex gap-5">
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#formation">Formation</a></li>
+                    <li><a href="#experiences">Expériences</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projet">Projet</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Section Accueil avec image -->
+    <section class="relative min-h-screen flex items-center justify-center">
+        <!-- Image d'arrière-plan -->
+        <div 
+            class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style="background-image: url('images porfolio/3d-render-robot-sitting-mouse.jpg');">
+        </div>
+        
+        <!-- Overlay pour améliorer la lisibilité -->
+        <div class="absolute inset-0 bg-black/70"></div>
+        
+        <div class="relative z-10 w-full px-10 text-center">
+            <div class="text-4xl md:text-4xl font-serif italic py-6 text-white">Développeur Web Débutant</div>
+            <h1 class="text-5xl md:text-8xl lg:text-9xl font-mono font-bold text-white mt-10">
+                <span class="underline text-4xl md:text-8xl text-white -ml-10">Bathie</span> Massamba Diouf
+            </h1>
+        </div>
+    </section>
+
+    <!-- Section À propos (séparée) -->
+    <section id="presentation" class="py-20 px-10 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-10 text-gray-800 underline">À propos</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <p class="text-xl font-serif">ÉTUDIANT SPÉCIALISÉ<br>
+                <span class="text-xl font-serif">
+                    en développement web full-stack, passionné par la création d'applications innovantes et l'apprentissage continu des technologies.
+                </span></p>
+                
+                <p class="text-xl font-serif">
+                    Étant passionné par le développement web avec une solide formation en programmation et design, 
+                    je combine apprentissage académique et projets pratiques pour développer mes compétences techniques.
+                </p>
+                
+                <p class="text-xl font-serif">
+                    Toujours à la recherche de nouveaux défis et opportunités d'apprentissage pour 
+                    perfectionner mon expertise et contribuer à des projets innovants.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 border-t border-neutral-200 bg-gray-50">
+        <div class="max-w-5xl mx-auto text-center text-sm text-neutral-500">
+            <p>© 2026 B.Massamba Diouf/DevOps - Tous droits réservés.</p>
+        </div>
+    </footer>
 </body>
 </html>
